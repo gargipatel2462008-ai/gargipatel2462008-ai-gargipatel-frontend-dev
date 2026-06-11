@@ -1,0 +1,398 @@
+/* GLOBAL ARCHITECTURE & SYSTEM TOKENS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-dark-base: #0f0f11;       /* Premium Obsidian Tone */
+  --bg-card-surface: #16161a;    /* Clean Flat Card Tint */
+  --text-high-contrast: #ffffff;
+  --text-low-contrast: #a1a1aa;
+  --accent-industrial: #f59e0b;  /* Strict Professional Amber Accent */
+  --accent-glow: rgba(245, 158, 11, 0.15);
+  --border-muted: #27272a;
+  --font-system: 'Poppins', sans-serif;
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark-base);
+  color: var(--text-high-contrast);
+  font-family: var(--font-system);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* HIGH-END INTERFACE NAVBAR */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(15, 15, 17, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-muted);
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-high-contrast);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.logo .dot {
+  color: var(--accent-industrial);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.nav-item {
+  color: var(--text-low-contrast);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition-smooth);
+}
+
+.nav-item:hover {
+  color: var(--accent-industrial);
+}
+
+/* HERO SEGMENT BUILD */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 4rem 2rem;
+  background: radial-gradient(circle at 50% 30%, #1e1b10 0%, var(--bg-dark-base) 70%);
+}
+
+.hero-container {
+  max-width: 850px;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--accent-industrial);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 1.15;
+}
+
+.highlight {
+  color: var(--accent-industrial);
+}
+
+.description {
+  color: var(--text-low-contrast);
+  font-size: 1.25rem;
+  margin-bottom: 2.8rem;
+  font-weight: 300;
+}
+
+/* CONTROLS & CALL TO ACTIONS */
+.cta-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 2.2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: var(--transition-smooth);
+}
+
+.btn-primary {
+  background-color: var(--accent-industrial);
+  color: var(--bg-dark-base);
+}
+
+.btn-primary:hover {
+  background-color: #f5b041;
+  box-shadow: 0 10px 20px rgba(245, 158, 11, 0.2);
+}
+
+.btn-secondary {
+  border: 1px solid var(--border-muted);
+  color: var(--text-high-contrast);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent-industrial);
+  color: var(--accent-industrial);
+}
+
+/* INTERFACE SHELL COMPONENTS (Macro Sizing) */
+.section {
+  padding: 7rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  letter-spacing: -0.5px;
+}
+
+/* ABOUT STRUCTURE MODEL WITH META BAR */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1.2fr;
+  gap: 3.5rem;
+  background-color: var(--bg-card-surface);
+  padding: 3rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-muted);
+}
+
+.about-main p {
+  color: var(--text-low-contrast);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-left: 1px solid var(--border-muted);
+  padding-left: 2.5rem;
+  justify-content: center;
+}
+
+.meta-item {
+  font-size: 1.05rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #27272a;
+  padding-bottom: 0.5rem;
+}
+
+.meta-item strong {
+  color: var(--accent-industrial);
+  font-weight: 500;
+}
+
+.meta-item span {
+  color: var(--text-high-contrast);
+}
+
+/* TECHNICAL CARDS SHELL ENGINE (2D Grid Architecture) */
+.macro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--bg-card-surface);
+  border: 1px solid var(--border-muted);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  border-color: var(--accent-industrial);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.framework-card .card-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.3px;
+}
+
+.card p {
+  color: var(--text-low-contrast);
+  font-size: 0.95rem;
+}
+
+/* EXCLUSIVE ENGINEERING MILESTONES GRAPHIC VIEW */
+.milestones-grid {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.milestone-card {
+  border-top: 3px solid var(--border-muted);
+}
+
+.milestone-card:hover {
+  border-top-color: var(--accent-industrial);
+}
+
+.milestone-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--accent-industrial);
+  background-color: var(--accent-glow);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.tags-flex {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #1f1f23;
+  color: var(--text-high-contrast);
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 1px solid var(--border-muted);
+}
+
+/* EXCLUSIVE COMMUNICATION CHANNELS SYSTEM LINEAR ENGINE */
+.section-desc {
+  color: var(--text-low-contrast);
+  margin-top: -3rem;
+  margin-bottom: 4rem;
+}
+
+.channels-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.channel-card {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-card-surface);
+  border: 1px solid var(--border-muted);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text-high-contrast);
+  transition: var(--transition-smooth);
+}
+
+.channel-icon {
+  font-size: 2rem;
+  margin-right: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.channel-info {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.channel-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.channel-info p {
+  color: var(--text-low-contrast);
+  font-size: 0.9rem;
+}
+
+.arrow-indicator {
+  font-size: 1.2rem;
+  color: var(--text-low-contrast);
+  transition: var(--transition-smooth);
+}
+
+.channel-card:hover {
+  border-color: var(--accent-industrial);
+  background-color: #1c1c22;
+}
+
+.channel-card:hover .arrow-indicator {
+  color: var(--accent-industrial);
+  transform: translateX(6px);
+}
+
+/* METRIC FOOTER CONTROL */
+.site-footer {
+  text-align: center;
+  padding: 3.5rem 2rem;
+  border-top: 1px solid var(--border-muted);
+  color: var(--text-low-contrast);
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE LAYOUT ENGINE AUTOMATION */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .about-sidebar {
+    border-left: none;
+    border-top: 1px solid var(--border-muted);
+    padding-left: 0;
+    padding-top: 1.8rem;
+  }
+  .channel-card {
+    padding: 1.2rem 1.5rem;
+  }
+  .channel-icon {
+    margin-right: 1.2rem;
+  }
+}
