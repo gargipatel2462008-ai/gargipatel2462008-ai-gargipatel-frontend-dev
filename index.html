@@ -1,172 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gargi Patel | Frontend Developer Intern</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gargi Patel | Semantic Web Portal Framework</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="#home" class="logo">Gargi<span class="dot">.</span></a>
-      <ul class="nav-links">
-        <li><a href="#home" class="nav-item">Home</a></li>
-        <li><a href="#about" class="nav-item">About</a></li>
-        <li><a href="#skills" class="nav-item">Skills</a></li>
-        <li><a href="#projects" class="nav-item">Projects</a></li>
-        <li><a href="#contact" class="nav-item">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="main-content">
-
-    <section id="home" class="hero-section">
-      <div class="hero-container">
-        <p class="subtitle">Industrial Training Kit | Project 1</p>
-        <h1>Hi, I'm <span class="highlight">Gargi Patel</span></h1>
-        <p class="description">Frontend Developer Intern at DecodeLabs. Architecting accessible, highly semantic, and performance-optimized responsive web environments.</p>
-        <div class="cta-group">
-          <a href="#contact" class="btn btn-primary">Establish Contact</a>
-          <a href="#projects" class="btn btn-secondary">Review Milestones</a>
+    <header class="global-header">
+        <div class="header-container">
+            <div class="logo">Gargi<span>.</span></div>
+            <nav class="navigation-gateways">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <section id="about" class="section">
-      <h2 class="section-title">About <span class="highlight">Me</span></h2>
-      <div class="about-grid">
-        <article class="about-main">
-          <p>I am a dedicated Frontend Developer currently undergoing rigorous professional engineering tracks at DecodeLabs. I focus on developing modular web modules with absolute logical structures, clean data flow principles, and robust semantic integrity.</p>
-          <p>My core approach bridges foundational programmatic design and UI layout engines, transforming architectural layouts into highly fluid digital real estate.</p>
-        </article>
-        <aside class="about-sidebar">
-          <div class="meta-item"><strong>Name:</strong> <span>Gargi Patel</span></div>
-          <div class="meta-item"><strong>Role:</strong> <span>Frontend Developer Intern</span></div>
-          <div class="meta-item"><strong>Company:</strong> <span>DecodeLabs</span></div>
-          <div class="meta-item"><strong>Batch:</strong> <span>2026</span></div>
-        </aside>
-      </div>
-    </section>
+    <main>
 
-    <section id="skills" class="section">
-      <h2 class="section-title">Technical <span class="highlight">Frameworks</span></h2>
-      <div class="macro-grid">
-        
-        <article class="card framework-card">
-          <div class="card-icon" aria-hidden="true">🌐</div>
-          <h3>HTML</h3>
-          <p>Semantic markup, proper document structure, accessibility standards.</p>
-        </article>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <p class="track-badge">INDUSTRIAL TRAINING KIT | PROJECT 1</p>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Gargi Patel</span></h1>
+                <p class="hero-subtitle">
+                    Frontend Developer Intern at DecodeLabs. Architecting accessible, highly semantic, and performance-optimized responsive web environments.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-filled">Establish Contact</a>
+                    <a href="#projects" class="btn btn-outlined">Review Milestones</a>
+                </div>
+            </div>
+        </section>
 
-        <article class="card framework-card">
-          <div class="card-icon" aria-hidden="true">🎨</div>
-          <h3>CSS</h3>
-          <p>Flexbox, Grid layout, responsive design, DRY principles.</p>
-        </article>
+        <hr class="section-divider">
 
-        <article class="card framework-card">
-          <div class="card-icon" aria-hidden="true">⚡</div>
-          <h3>JavaScript</h3>
-          <p>DOM manipulation, events, ES6+ features, logic building.</p>
-        </article>
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-bio">
+                        <p>
+                            I am a dedicated Frontend Developer currently undergoing rigorous professional engineering tracks at DecodeLabs. I focus on developing modular web modules with absolute logical structures, clean data flow principles, and robust semantic integrity.
+                        </p>
+                        <p>
+                            My core approach bridges foundational programmatic design and UI layout engines, transforming architectural layouts into highly fluid digital real estate.
+                        </p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="meta-row">
+                            <span class="meta-label">Name:</span>
+                            <span class="meta-value">Gargi Patel</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label">Role:</span>
+                            <span class="meta-value">Frontend Developer Intern</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label">Company:</span>
+                            <span class="meta-value">DecodeLabs</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label">Batch:</span>
+                            <span class="meta-value">2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <article class="card framework-card">
-          <div class="card-icon" aria-hidden="true">🐍</div>
-          <h3>Python</h3>
-          <p>Programming fundamentals, problem solving, scripting.</p>
-        </article>
+        <hr class="section-divider">
 
-        <article class="card framework-card">
-          <div class="card-icon" aria-hidden="true">⚙️</div>
-          <h3>C / C++</h3>
-          <p>Core programming concepts, data structures, algorithms.</p>
-        </article>
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <h2 class="section-title">Technical <span class="highlight">Frameworks</span></h2>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-icon">🌐</div>
+                        <h3>HTML</h3>
+                        <p>Semantic markup, proper document structure, accessibility standards.</p>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h3>CSS</h3>
+                        <p>Flexbox, Grid layout, responsive design, DRY principles.</p>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon">⚡</div>
+                        <h3>JavaScript</h3>
+                        <p>DOM manipulation, events, ES6+ features, logic building.</p>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon">🐍</div>
+                        <h3>Python</h3>
+                        <p>Programming fundamentals, problem solving, scripting.</p>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon">⚙️</div>
+                        <h3>C / C++</h3>
+                        <p>Core programming concepts, data structures, algorithms.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-      </div>
-    </section>
+        <hr class="section-divider">
 
-    <section id="projects" class="section">
-      <h2 class="section-title">Engineering <span class="highlight">Milestones</span></h2>
-      <div class="macro-grid milestones-grid">
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <h2 class="section-title">Engineering <span class="highlight">Milestones</span></h2>
+                <div class="projects-grid">
+                    <a href="https://gargipatel2462008-ai.github.io/gargipatel2462008-ai-gargipatel-frontend-dev/" target="_blank" class="project-card-link">
+                        <article class="project-card">
+                            <span class="project-tag">PROJECT 01</span>
+                            <h3>Semantic Web Portal Framework</h3>
+                            <p>
+                                Engineered an industry-standard static layout based entirely on modern structural landmarks, strict document layout models, and high contrast styling.
+                            </p>
+                            <div class="tech-badges">
+                                <span>HTML5</span>
+                                <span>CSS3 (Grid/Flex)</span>
+                            </div>
+                        </article>
+                    </a>
+                    <article class="project-card">
+                        <span class="project-tag">PROJECT 02</span>
+                        <h3>Modular System Engine</h3>
+                        <p>
+                            Developed localized structural assets mapping core arithmetic data flows into reliable client terminal readouts using advanced functional logic parameters.
+                        </p>
+                        <div class="tech-badges">
+                            <span>Python Core</span>
+                            <span>Logic</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <span class="project-tag">PROJECT 03</span>
+                        <h3>Structural Memory Database</h3>
+                        <p>
+                            Constructed low-level console execution maps dealing with programmatic information stacks, file handling structures, and dynamic sequence streams.
+                        </p>
+                        <div class="tech-badges">
+                            <span>C++ Engine</span>
+                            <span>Data Structures</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <article class="card milestone-card">
-          <div class="milestone-badge">Project 01</div>
-          <h3 class="milestone-title">Semantic Web Portal Framework</h3>
-          <p class="milestone-desc">Engineered an industry-standard static layout based entirely on modern structural landmarks, strict document layout models, and high contrast styling.</p>
-          <div class="tags-flex">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3 (Grid/Flex)</span>
-          </div>
-        </article>
+        <hr class="section-divider">
 
-        <article class="card milestone-card">
-          <div class="milestone-badge">Project 02</div>
-          <h3 class="milestone-title">Modular System Engine</h3>
-          <p class="milestone-desc">Developed localized structural assets mapping core arithmetic data flows into reliable client terminal readouts using advanced functional logic parameters.</p>
-          <div class="tags-flex">
-            <span class="tag">Python Core</span>
-            <span class="tag">Logic</span>
-          </div>
-        </article>
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <h2 class="section-title">Communication <span class="highlight">Channels</span></h2>
+                <p class="section-subtitle">Initialize connection modules via live digital endpoints.</p>
+                
+                <div class="channels-stack">
+                    <a href="mailto:gargipatel2462008@gmail.com" class="channel-row">
+                        <div class="channel-meta">
+                            <span class="channel-icon">✉️</span>
+                            <div>
+                                <h4>Email Gateway</h4>
+                                <p>gargipatel2462008@gmail.com</p>
+                            </div>
+                        </div>
+                        <span class="arrow-trigger">➔</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/gargi-patel-19a18637a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="channel-row">
+                        <div class="channel-meta">
+                            <span class="channel-icon">💼</span>
+                            <div>
+                                <h4>LinkedIn Networking</h4>
+                                <p>View verified professional corporate profile</p>
+                            </div>
+                        </div>
+                        <span class="arrow-trigger">➔</span>
+                    </a>
+                    
+                    <a href="https://github.com/gargipatel2462008-ai" target="_blank" class="channel-row">
+                        <div class="channel-meta">
+                            <span class="channel-icon">🐙</span>
+                            <div>
+                                <h4>GitHub Workspace</h4>
+                                <p>Stream real-time updates and active code tracks</p>
+                            </div>
+                        </div>
+                        <span class="arrow-trigger">➔</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <article class="card milestone-card">
-          <div class="milestone-badge">Project 03</div>
-          <h3 class="milestone-title">Structural Memory Database</h3>
-          <p class="milestone-desc">Constructed low-level console execution maps dealing with programmatic information stacks, file handling structures, and dynamic sequence streams.</p>
-          <div class="tags-flex">
-            <span class="tag">C++ Engine</span>
-            <span class="tag">Data Structures</span>
-          </div>
-        </article>
+    </main>
 
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <h2 class="section-title">Communication <span class="highlight">Channels</span></h2>
-      <p class="section-desc">Initialize connection modules via live digital endpoints.</p>
-      
-      <div class="channels-container">
-        
-        <a href="mailto:gargipatel2462008@gmail.com" class="channel-card">
-          <div class="channel-icon">📧</div>
-          <div class="channel-info">
-            <h3>Email Gateway</h3>
-            <p>gargipatel2462008@gmail.com</p>
-          </div>
-          <span class="arrow-indicator">➔</span>
-        </a>
-
-        <a href="https://www.linkedin.com/in/gargi-patel-19a18637a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="channel-card">
-          <div class="channel-icon">💼</div>
-          <div class="channel-info">
-            <h3>LinkedIn Networking</h3>
-            <p>View verified professional corporate profile</p>
-          </div>
-          <span class="arrow-indicator">➔</span>
-        </a>
-
-        <a href="https://github.com/gargipatel2462008-ai" target="_blank" rel="noopener" class="channel-card">
-          <div class="channel-icon">🐙</div>
-          <div class="channel-info">
-            <h3>GitHub Situation</h3>
-            <p>Stream real-time updates and active code tracks</p>
-          </div>
-          <span class="arrow-indicator">➔</span>
-        </a>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 Gargi Patel | Verified DecodeLabs Quality Deployment Track</p>
-  </footer>
+    <footer class="global-footer">
+        <p>&copy; 2026 Gargi Patel. Undergoing Engineering Tracks at DecodeLabs. Absolute Semantic System Architecture.</p>
+    </footer>
 
 </body>
 </html>
