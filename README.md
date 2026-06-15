@@ -26,8 +26,7 @@ The primary objective of this project is to construct a robust, highly accessibl
 - Ensured strong logical data flow and accessibility metrics by avoiding non-semantic layout hacks.
 
 ### 2. CSS3 Layout Engineering
-- Utilized **CSS Grid** for the structural alignment of the *Technical Frameworks* and *Engineering Milestones* segments.
-- Utilized **Flexbox Layout Models** for navigation gateways, hero actions, and multi-layered metric rows.
+- Utilized **CSS Grid** and **Flexbox Layout Models** for macro layout structures, navigation gateways, and components micro-alignment.
 - Implemented global design tokens via dynamic CSS Custom Properties (`:root` variables) for scalable theme maintenance.
 
 ### 3. Responsive Web Matrix
